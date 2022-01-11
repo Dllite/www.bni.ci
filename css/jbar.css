@@ -1,0 +1,64 @@
+@charset "iso-8859-1";
+.jbar{
+	/*height:50px;*/
+	width:100%;
+	background:#fff url(../images/icone_warning.jpg) 0 8px no-repeat;
+	position:fixed;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95); 
+	opacity: 0.95;
+	-moz-opacity: 0.95;
+	text-align:center;
+	left:0px;
+	z-index:9999999;
+	margin:0px;
+	padding:0px;
+	border:1px solid #fff;
+	color:#333;
+	padding:20px 0;
+}
+.jbar-top{top:0px;border-top:none;}
+.jbar-bottom{bottom:0px;border-bottom:none;}
+
+.jbar span{background:transparent url(../images/vide.gif) no-repeat top left;padding:15px 0px 15px 60px;}
+.jbar span b{color:#000}.jbar span b.rouge{color:#FB1C05}.jbar span b.rose{color:#D01A64}
+.jbar span b.petit{font-size:14px;font-style:italic}
+.jbar span a{color:#D01A64;font-style:italic;}
+.msg_warning{color:#EA5F02;background-color:#FFFFCE;border-color:#FFCA05}
+.msg_warning span{background-image:url(../images/msg_warning.png);}
+.msg_error{color:#D70303;background-color:#F7DADA;border-color:#FD4A4A}
+.msg_error span{background-image:url(../images/msg_error.png);}
+.msg_succes{color:#1BAC04;background-color:#E5FDE1;border-color:#28FC07}	
+.msg_succes span{background-image:url(../images/msg_succes.png);}
+.msg_info{color:#0574B1;background-color:#fff;border-color:#ccc}	
+.msg_info span{background-image:url(../images/msg_info.png);}
+.msg_ajax{color:#777;background-color:#eee;border-color:#ccc}
+.msg_ajax span{background-image:url(../images/msg_ajax_loader.gif);padding-left:133px;background-position:left 18px}
+.jbar-content{
+	line-height:25px;
+	font-size: 18px;
+	font-family:'Lucida Grande',sans-serif;
+	padding:0px 20px;
+	
+}
+a.jbar-cross{
+	position:absolute;
+	width:13px;
+	height:13px;
+	/*background:transparent url(../images/bg_x.png) no-repeat 3px left;*/
+	cursor:pointer;
+	top:3px;
+	right:10px;
+	font-size:18px;
+	font-family:arial;
+	font-weight:bold;
+	color:#999;
+}
+/*a.jbar-cross:hover{
+	background-image: url(../images/cross_hover.png)
+}
+.jbar-top a.jbar-cross{
+	top:8px;	
+}
+.jbar-bottom a.jbar-cross{
+	bottom:8px;
+}*/

@@ -1,0 +1,14 @@
+@media (max-width: 992px){
+	.top-header .top-header-menu{float: none !important; clear: both !important; padding: 0px 0 !important;}
+	.top-header .top-header-menu > ul.menu > li{border-right: 1px solid transparent !important;}
+	.top-header .top-header-menu > ul.menu > li > a{font-size: 12px !important; padding: 10px 2px; margin: 0 !important}
+	
+	/*.sliderSection{display: none !important;}*/
+	.wrapper{position: relative;}
+}
+
+@media(min-width: 992px){
+	.navbar-toggle {
+		display: none !important;
+	}
+}

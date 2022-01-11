@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/* Main Styles */
+/*body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}*/
+
+#page-wrapper {
+  padding: 1.5em;
+}
+
+p.center {
+  text-align: center;
+}
+
+h1 {
+  color: #0198cc;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Modal Styles */
+#css-modal {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  z-index: 10000000;
+}
+
+#css-modal h2 {
+  /*color: #0198cc;*/
+  color: #34a839;
+  font-size: 2em;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+#css-modal .css-modal-check {
+  display: none;
+  pointer-events: auto;
+}
+
+#css-modal .css-modal-check:checked ~ .css-modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#css-modal .css-modal {
+  background: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  max-width: 600px;
+  opacity: 0;
+  padding: 2.25em;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+  z-index: 1;
+  margin:auto;
+}
+
+#css-modal .css-modal p {
+  text-align: left;
+}
+
+#css-modal .css-modal .close {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  color:#000;
+  font-size: 12px;
+}
+
+#css-modal .css-modal .css-modal-btn button {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: 1em;
+}
+
+#css-modal .css-modal-check:checked ~ #overlay {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#css-modal #overlay {
+  background: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.8s;
+}
+
+#css-modal:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.close:after {
+  color: #0198cc;
+  content: "\0058";
+  float: right;
+  font-size: 1.75em;
+}
+
+#css-modal .btn-coro {
+  color: #fff;
+  background-color: #ff8d00;
+}
+
+#css-modal .btn-coro:hover {
+  background-color: #a2a2a2;
+}
+
+#css-modal .btn-site {
+  color: #fff;
+  background-color: #34a839;
+}
+#css-modal .btn-site:hover {
+  background-color: #a2a2a2;
+}
+
+#css-modal .btn {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.75em 1.25em;
+  text-align: center;
+  /*display: inline;*/
+  /*float:left;*/
+  /*margin-right: 20px;*/
+}
+
+
+/*-----html,body {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  font-family:Verdana,Arial;
+  background:#F0E8D8;
+}
+#page{
+  width:50em;
+  margin:0 auto;
+  position:relative;
+}
+#header{
+  margin: 1em 0;
+  padding: 0.5em;
+}
+#header h1{
+  color: #706040;
+  font-style:normal;
+  margin:0;
+  padding:0.5em;
+  text-shadow:1px 1px 0px #FFF;
+}
+#header span {
+  float: right;
+  font-size: 0.5em;
+  font-style: italic;
+}----------*/
+#diapo{
+  position:relative;
+  height:30em;
+  margin:auto;
+  text-align:center;
+  margin: 2em 2em;
+}
+#diapo div{
+  display:inline-block;
+}
+#diapo > * + *{
+  margin-left:5px;
+}
+.big_image{
+  position:absolute;
+  display:block;
+  width:600px;
+  top:100px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  opacity:0;
+  border:10px solid #FFF;
+  box-shadow: 0 2px 8px 2px #666;
+
+  -webkit-transform:scale(0.25);
+     -moz-transform:scale(0.25);
+      -ms-transform:scale(0.25);
+       -o-transform:scale(0.25);
+          transform:scale(0.25);
+
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+.r_check, .on_check{
+  cursor: pointer;
+}
+.r_check:checked ~ label img{
+  opacity:0.25;
+  border:2px solid #006699;
+}
+.r_check:checked ~ .big_image {
+  opacity:1;
+
+  -webkit-transform:scale(1);
+     -moz-transform:scale(1);
+      -ms-transform:scale(1);
+       -o-transform:scale(1);
+          transform:scale(1);
+}
+.r_check{
+/*  display:none;/* si masquer pas acces avec touche */
+  opacity:0;
+  position:absolute;
+}
+label img.vignette{
+  width:100px;
+  height:75px;
+  border:2px solid #FFF;
+}
+.retour{
+  color:#909090;
+  font-size:1em;
+  left:1em;
+  bottom:1em;
+  position:fixed;
+  text-decoration:none;
+  font-style:italic;
+  text-shadow:1px 1px 0px #FFF;
+}
+.retour:hover{
+  font-style:normal;
+  color:#706040;
+}
